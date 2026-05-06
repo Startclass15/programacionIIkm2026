@@ -3,6 +3,17 @@ import flet as ft #Importacion del framework
 
 def main(page: ft.Page): #Funcion principal 
     page.title="Mi App" 
+    page.appbar=ft.AppBar(title="Aplicacion",bgcolor="red")
+    #navegacion inferior
+    page.bottom_appbar=ft.NavigationBar(
+        destinations=[
+            ft.NavigationBarDestination(label="Inicio",icon=ft.Icons.HOME),
+            ft.NavigationBarDestination(label="Productos",icon=ft.Icons.STORE),
+            ft.NavigationBarDestination(label="Servicios",icon=ft.Icons.SUPERVISOR_ACCOUNT),
+            ft.NavigationBarDestination(label="Ajustes",icon=ft.Icons.SETTINGS)
+        ]
+    )
+
     page.add( #Interfaz grafica
         #Botones
         ft.Button("Boton"),
