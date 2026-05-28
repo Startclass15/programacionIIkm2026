@@ -1,8 +1,6 @@
 import flet as ft
 import flet_video as ftv
-
-
-
+import flet_audio as fa
 
 def main(page: ft.Page):
 
@@ -13,9 +11,18 @@ def main(page: ft.Page):
                
     ])
 
-    
+    reproductorAudio=fa.Audio(
+        
+        src="audio.mp3",
+        autoplay=True,
+        volume=1.0
+
+
+                               )
+
     page.add(
         reproductorVideo
+
         
     )
 
