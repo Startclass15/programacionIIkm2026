@@ -7,6 +7,13 @@ from pantallas.pantalla4 import pantalla4Vista
 
 
 def main(page: ft.Page):
+    #cabecera principal
+    page.appbar=ft.AppBar(
+        title="Componentes Dinamicos",
+        bgcolor="orange",
+        center_title=True
+    )
+
     contenido=ft.Container(expand=True)
     pantallas=[
         pantalla1Vista(),

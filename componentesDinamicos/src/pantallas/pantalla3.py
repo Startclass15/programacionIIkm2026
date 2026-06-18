@@ -1,10 +1,13 @@
 import flet as ft
 
+def click():
+    print("click")
+
 def pantalla3Vista():
     return ft.Column(
         alignment=ft.MainAxisAlignment.CENTER,
         controls=[
-            ft.Text("Pantalla 3", size=30)
+            ft.CupertinoFilledButton("Prueba",on_click=click)
         ],
         expand=True
     )
